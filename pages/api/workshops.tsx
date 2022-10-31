@@ -38,7 +38,7 @@ export default async function handler(req: NextRequest) {
 
   if (!searchParams.has("name")) {
     return new ImageResponse(
-      <div tw="flex flex-col justify-between h-full w-full" style={{ fontFamily: 'Inter' }}>
+      <div tw="flex flex-col justify-between h-full w-full bg-white" style={{ fontFamily: 'Inter' }}>
         <div tw="flex p-15">
           <h1 tw="text-6xl font-bold">Overflow Workshops</h1>
         </div>

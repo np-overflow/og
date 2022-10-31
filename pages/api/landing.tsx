@@ -15,7 +15,7 @@ export default async function handler(req: NextRequest) {
 
   if (!searchParams.has("name")) {
     return new ImageResponse(
-      <div tw="flex flex-col justify-between h-full w-full" style={{ fontFamily: 'Cubano' }}>
+      <div tw="flex flex-col justify-between h-full w-full bg-white" style={{ fontFamily: 'Cubano' }}>
         <div tw="flex flex-col p-15 text-8xl font-bold">
           <span style={{ whiteSpace: 'pre' }}>
             INSPIRING{" "}
