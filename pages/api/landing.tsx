@@ -7,29 +7,6 @@ export const config = {
   runtime: 'experimental-edge'
 }
 
-interface NuxtContentQueryResponse {
-  workshops: {
-    name: string
-    start_date: string
-    end_date: string
-    meeting_url: string
-  }[]
-}
-
-const query = new URLSearchParams({
-  _params: JSON.stringify({ "first": true, "where": [{ "_path": "/workshops" }] })
-})
-
-async function isValidWorkshop(name: string) {
-  const data = await (await fetch(`https://next.np-overflow.club/api/_content/query?${query.toString()}`, {
-    next: {
-      revalidate: 3600
-    }
-  })).json() as NuxtContentQueryResponse
-
-  return data.workshops.some((workshop) => workshop.name === name)
-}
-
 const cubano = fetch(new URL('../../assets/Cubano.ttf', import.meta.url)).then((res) => res.arrayBuffer())
 
 export default async function handler(req: NextRequest) {
