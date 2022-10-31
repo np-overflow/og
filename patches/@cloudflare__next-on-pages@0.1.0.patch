@@ -1,0 +1,15 @@
+diff --git a/dist/index.js b/dist/index.js
+index 3ab5ea28be5a197b9a2d57cbc8b1bbfce7f03010..4689c8ca315d8ddcb6a7dc48c7d73ee08ede879d 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -6001,8 +6001,8 @@ var transform = async ({
+           }
+           let contents = await (0, import_promises.readFile)(functionFile, "utf8");
+           contents = contents.replace(
+-            /Object.defineProperty\(globalThis,\s*"__import_unsupported",\s*{[\s\S]*configurable:\s*([^,}]*).*}\s*\)/gm,
+-            "true"
++            /(Object.defineProperty\(globalThis,\s*"__import_unsupported",\s*{[\s\S]*?configurable:\s*)([^,}]*)(.*}\s*\))/gm,
++            "$1true$3"
+           );
+           if (experimentalMinify) {
+             const parsedContents = parse3(contents, {
