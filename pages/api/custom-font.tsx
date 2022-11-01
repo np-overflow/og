@@ -23,6 +23,7 @@ export default async function handler() {
           fontFamily: 'Typewriter',
           paddingTop: '100px',
           paddingLeft: '50px',
+          display: 'flex'
         }}
       >
         Hello world!
