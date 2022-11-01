@@ -1,5 +1,4 @@
 import { ImageResponse } from '@vercel/og'
-import OverflowLogoFullBlack from '../../components/OverflowLogoFullBlack'
 
 export const config = {
   runtime: 'experimental-edge',
@@ -27,7 +26,6 @@ export default async function handler() {
         }}
       >
         Hello world!
-        <OverflowLogoFullBlack />
       </div>
     ),
     {
