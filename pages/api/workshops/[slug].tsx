@@ -1,7 +1,7 @@
 import { ImageResponse } from "@vercel/og"
 import { NextRequest } from "next/server"
 
-import OverflowLogoFullBlack from "../../components/OverflowLogoFullBlack"
+import OverflowLogoFullBlack from "../../../components/OverflowLogoFullBlack"
 
 export const config = {
   runtime: 'experimental-edge'
