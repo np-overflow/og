@@ -47,7 +47,7 @@ export default async function handler(req: NextRequest) {
     return new ImageResponse(
       <div tw="flex flex-col justify-between h-full w-full bg-white" style={{ fontFamily: 'Inter' }}>
         <div tw="flex p-15">
-          <h1 tw="text-6xl font-bold">Overflow Workshops</h1>
+          <h1 tw="text-8xl font-bold">Overflow Workshops</h1>
         </div>
 
         <div tw="flex ml-auto">
@@ -73,9 +73,9 @@ export default async function handler(req: NextRequest) {
   return new ImageResponse(
     <div tw="flex flex-col justify-between h-full w-full bg-white" style={{ fontFamily: 'Inter' }}>
       <div tw="flex justify-between w-full items-center p-15">
-        <h1 tw="text-6xl font-bold">{workshopData.name}</h1>
+        <h1 tw="text-8xl font-bold">{workshopData.name}</h1>
         <div tw="flex bg-orange-100 border border-orange-300 rounded-full px-3 py-2">
-          <span tw="text-2xl text-orange-900">{startDate.toLocaleDateString()}</span>
+          <span tw="text-4xl text-orange-900">{startDate.toLocaleDateString()}</span>
         </div>
       </div>
 
