@@ -1,7 +1,7 @@
 import { ImageResponse } from "@vercel/og"
 import { NextRequest } from "next/server"
 
-import OverflowLogoFullBlack from "../../../components/OverflowLogoFullBlack"
+import OverflowLogoFullBlack from "../../components/OverflowLogoFullBlack"
 
 export const config = {
   runtime: 'experimental-edge'
@@ -33,8 +33,8 @@ async function getWorkshopData(slug: string): Promise<NuxtContentWorkshop | unde
   return data.workshops.find((workshop) => workshop.slug === slug)
 }
 
-const interBold = fetch(new URL('../../../assets/Inter-Bold.otf', import.meta.url)).then((res) => res.arrayBuffer())
-const interRegular = fetch(new URL('../../../assets/Inter-Regular.otf', import.meta.url)).then((res) => res.arrayBuffer())
+const interBold = fetch(new URL('../../assets/Inter-Bold.otf', import.meta.url)).then((res) => res.arrayBuffer())
+const interRegular = fetch(new URL('../../assets/Inter-Regular.otf', import.meta.url)).then((res) => res.arrayBuffer())
 
 export default async function handler(req: NextRequest) {
   const { searchParams } = req.nextUrl
