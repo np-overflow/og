@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@vercel/og':
-    specifier: 0.5.8
-    version: 0.5.8
+    specifier: 0.5.9
+    version: 0.5.9
   next:
     specifier: ^13.0.5
     version: 13.0.5(react-dom@18.2.0)(react@18.2.0)
@@ -192,8 +192,8 @@ packages:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: true
 
-  /@vercel/og@0.5.8:
-    resolution: {integrity: sha512-WlY5q96e2OmQEUsgqKZrCljNHiD05aErsa7u2z2+pkxyoVSWPHXLYFwHPtp7+IubU4gt4JYfgSbzGQg7n6xeAQ==}
+  /@vercel/og@0.5.9:
+    resolution: {integrity: sha512-CtjaV/BVHtNCjRtxGqn8Q6AKFLqcG34Byxr91+mY+4eqyp/09LVe9jEeY9WXjbaKvu8syWPMteTpY+YQUQYzSg==}
     engines: {node: '>=16'}
     dependencies:
       '@resvg/resvg-wasm': 2.4.1
