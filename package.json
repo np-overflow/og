@@ -11,12 +11,12 @@
   "dependencies": {
     "@vercel/og": "0.5.20",
     "next": "^13.0.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
-    "@types/react": "^18.0.25",
+    "@types/react": "^19.0.0",
     "typescript": "^5.0.0"
   }
 }
